@@ -16,3 +16,6 @@
 ````
 npm install react-router-dom axios react-icons react-player sass react-helmet-async swiper
 ````
+
+01. 기본 셋팅
+02. 페이지 셋팅
