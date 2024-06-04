@@ -13,12 +13,14 @@ import BillPage from './pages/BillPage'
 import Recent from './pages/Recent'
 import Favorites from './pages/Favorites'
 import Mymusic from './pages/Mymusic'
+import Search from './components/Search'
 
 const App = () => {
   return (
     <BrowserRouter>
       <Header />
       <Main>
+        <Search />
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/melon' element={<MelonPage />} />
