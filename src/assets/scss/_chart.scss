@@ -1,8 +1,35 @@
 .music-chart {
-    padding: 2rem;
-    font-family: var(--fontE);
-    font-weight: 700;
-    margin-bottom: 20px;
+    padding: 0 2rem 2rem 2rem;
+    position: relative;
+
+    >.title {
+        font-weight: 900;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h2 {
+            font-weight: 900;
+        }
+
+        .date {
+            button {
+                background: transparent;
+                cursor: pointer;
+
+                svg {
+                    vertical-align: -7px;
+                    margin-right: 7px;
+                }
+
+                span {
+                    font-family: var(--fontJ);
+                    font-weight: 300;
+                }
+            }
+        }
+    }
 
     >.list {
         ul {
@@ -51,7 +78,7 @@
                 }
 
                 &:hover {
-                    background-color: var(--pointcolor);
+                    background-color: var(--white);
 
                     .album {
                         color: var(--black100);
@@ -59,5 +86,15 @@
                 }
             }
         }
+    }
+
+    .search-results {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        z-index: 1000;
+        width: 100%;
+        height: 400px;
+        background-color: #ccc;
     }
 }
